@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery_tut</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+      .main-head {
+        text-align: center;
+      }
+      .container {
+        margin-left: 10vh;
+        /* background-color: lightgreen; */
+      }
+      .ip1 {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        width: 12rem;
+        outline: none;
+        border: none;
+        background-color: lightblue;
+        color: black;
+      }
+      .btn1 {
+        padding: 0.8rem;
+        border: none;
+        width: 6rem;
+        font-size: 1rem;
+        font-weight: 700;
+        border-radius: 0.5rem;
+        background-color: lightpink;
+        cursor: pointer;
+      }
+      .img1 {
+        width: 30rem;
+        margin-top: 1rem;
+        height: 20rem;
+        display: block;
+        border-radius: 1.5rem;
+      }
+      .new_btn {
+        padding: 1rem;
+        border: none;
+        width: 15rem;
+        font-size: 2rem;
+        font-weight: 900;
+        border-radius: 0.7rem;
+        background-color: dodgerblue;
+        cursor: pointer;
+      }
+      .panel {
+        border-radius: 1rem;
+        margin: 0.2rem;
+        padding: 8rem;
+        background-color: lightblue;
+        display: none;
+      }
+      .anim {
+        border-radius: 1rem;
+        position: absolute;
+        margin: 0.2rem;
+        padding: 1rem;
+        width: 8rem;
+        height: 8rem;
+        background-color: lightblue;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        //Hide/Show property:
+        $(".btn1").click(function () {
+          $(".p1").hide();
+        });
+        // $(".btn1").click(function () {
+        //   $(".p1").show();
+        // });
+        //Toggle:
+        // $(".btn1").click(function () {
+        //   $(".p1").toggle();
+        // });
+        //Fading Property:
+        // $(".btn1").click(function () {
+        //   $("#div1").fadeToggle();
+        //   $("#div2").fadeToggle("slow");
+        //   $("#div3").fadeToggle(3000);
+        // });
+        //Slide:
+        // $(".btn1").click(function () {
+        //   $(".panel").slideDown("slow");
+        // });
+        //Slide Toggle:
+        // $(".btn1").click(function () {
+        //   $(".panel").slideToggle("slow");
+        // });
+        //Animate:
+        // $(".btn1").click(function () {
+        //   $(".anim").animate({
+        //     left: "500px",
+        //     top: "300px",
+        //     opacity: "0.8",
+        //   });
+        // });
+      });
+    </script>
+  </head>
+  <body>
+    <h1 class="main-head">Hello,jQuery!</h1>
+    <div class="container">
+      <h3 class="hd3">I am a regular heading</h3>
+      <p class="p1">I am paragraph1 <span>Ok</span></p>
+      <p class="p2">I am paragraph2</p>
+      <input type="text" class="ip1" placeholder="Enter your text here." />
+      <button class="btn1">Click_me</button>
+      <!-- <img
+        src="https://images.freeimages.com/images/large-previews/e81/westminster-bridge-and-big-ben-london-uk-1635339.jpg"
+        alt="thames_at_night"
+        class="img1"
+      /> -->
+      <!-- <div class="sec-cont"> -->
+      <!-- <div
+        id="div1"
+        style="
+          width: 80px;
+          height: 80px;
+          background-color: red;
+          border-radius: 0.7rem;
+        "
+      ></div>
+      <br />
+      <div
+        id="div2"
+        style="
+          width: 80px;
+          height: 80px;
+          background-color: green;
+          border-radius: 0.7rem;
+        "
+      ></div>
+      <br />
+      <div
+        id="div3"
+        style="
+          width: 80px;
+          height: 80px;
+          background-color: blue;
+          border-radius: 0.7rem;
+        "
+      ></div> -->
+      <!-- </div> -->
+    </div>
+    <div class="panel">I will be displayed later.</div>
+    <div class="anim">I am a animation</div>
+  </body>
+</html>
