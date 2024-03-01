@@ -53,17 +53,31 @@ for(let elem of arr1)
 }
 console.log(set);
 
-let str5="this is some dummy data data dummy dummy this some is"
-let words=str5.split(' ');
-const set1=new Set();
+// let str5="this is some dummy data data dummy dummy this some is"
+// let words=str5.split(' ');
+// const set1=new Set();
 
-for(let word of words)
-{
-    set1.add(word);
-}
-console.log(set1)
+// for(let word of words)
+// {
+//     set1.add(word);
+// }
+// console.log(set1)
 
-for(let item of set1)
-{
-    console.log(item);
-}
+// for(let item of set1)
+// {
+//     console.log(item);
+// }
+
+
+let str6="this is data is data some dummy";
+let res1=new Set(str6.split(" "));
+console.log(res1);
+
+// let res3=true;
+// setTimeout(()=>{
+//     res3=false;
+// },0);
+// let count1=0;
+// while(res3){
+//     console.log(count1++);
+// }
