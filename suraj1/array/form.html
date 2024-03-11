@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            width: 200px;
+            background-color: beige;
+            margin: 20px;
+            padding: 10px;            
+        }
+
+        label{
+            text-transform: capitalize;
+        }
+
+        h2{
+            text-align: center;
+            text-decoration: underline;
+        }
+        input{
+            margin: 10px;
+          }
+          span{
+            color: red;
+          }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h2>Form</h2>
+        <label for="name">username</label>
+        <input type="text" name="" ><span></span><br>
+        <label for="age">age</label>
+        <input type="number" name="" id="" ><span id="age"></span><br>
+
+        <label for="genger">Gender</label><br>
+        
+        <label for="male">male</label>
+        <input type="radio" name="gender" id="" >
+
+        <label for="Female">Female</label>
+        <input type="radio" name="gender" id="" ><br>
+
+        <label for="address">Address</label>
+        <textarea name="" id="" cols="20" rows="2" ></textarea>
+
+        <label for="email">email</label>
+        <input type="email" >
+
+        <label for="password">password</label>
+        <input type="password" name="" id="" >
+
+        <input onclick="validate()" type="submit" id="btn" >
+        <input type="reset" >
+
+
+
+    </form>
+
+
+    <script>
+        let input=document.querySelectorAll('input');
+        let span=document.querySelector('span')
+        let btn=document.querySelector('#btn')
+        let span1=document.querySelector('#age')
+        let data= Array.from(input);
+
+        // function required(input){
+        //     if(input!=Null){
+        //         return true;
+        //     }
+        //     else{
+        //         return false;
+        //     }
+        // }
+
+        // required(input);
+
+        function validate(){
+            let name=data[0].value.length;
+            let age=data[1].value;
+
+           
+            if(name<=3)
+            {
+                span.innerText="** name is too short";
+                btn.type="hidden";
+                
+            }
+            if(name===0){
+                span.innerText="** name not be empty";
+                btn.type="hidden";
+
+            }
+            if(age<=18)
+            {
+                console.log(age);
+                span1.innerText="** Age not be empty";
+                btn.type="hidden";
+
+            }
+        }
+
+
+    </script>
+</body>
+</html>
